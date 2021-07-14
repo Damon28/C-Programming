@@ -13,8 +13,8 @@ int main()
     printf("He really liked the name %s\n", characterName);
     printf("but did not like being %d.\n\n", characterAge);
 
-    int age = 40;
-    double gpa = 3.7;
+    int age1 = 40;
+    double gpa1 = 3.7;
     char grade = 'A';
     char phrase[] = "Need those brackets AND double quotation marks to create a string (AKA an array).";
     printf("%s\n\n", phrase);
@@ -58,6 +58,63 @@ int main()
     printf("This will make the above code throw an error since it tries to modify the constant.\n");
     printf("*Constant variables are usually all caps (so 'NUM').\n\n");
 
+    printf("===Getting User Input===\n\n");
+
+    printf("int age;\nprintf(\"Enter your age: \")\n");
+    printf("scanf(\"%%d\", &age);\n");
+    printf("*NOTE: the ampersand before the variable 'age'\n");
+
+    int age;
+    printf("Enter your age: ");
+    scanf("%d", &age);
+    printf("Your age is: %d\n\n", age);
+
+    printf("For a 'double':\n");
+    printf("double gpa;\nprintf(\"Enter the gpa: \")\n");
+    printf("scanf(\"%%lf\", &gpa);\n");
+    printf("printf(\"Your gpa is: %f\", gpa\n");
+    printf("*NOTE: When using 'scanf' a double is represented by '%%lf' whereas in 'printf' it's just '%%f'.\n");
+
+    double gpa;
+    printf("Enter the gpa: ");
+    scanf("%lf", &gpa);
+    printf("Your gpa is: %f\n\n", gpa);
+
+    printf("For a 'characters':\n");
+    printf("char letterGrade;\nprintf(\"Enter your grade: \")\n");
+    printf("scanf(\" %%c\", &letterGrade);\n");
+    printf("printf(\"Your letter grade is: %%c\", letterGrade)\n");
+    printf("*NOTE: %%c for character\n**ALSO the space before %%c.\n");
+    printf("***For an explanation ref:\n   https://stackoverflow.com/questions/8464620/program-doesnt-wait-for-user-input-with-scanfc-yn\n   https://stackoverflow.com/questions/7826605/few-questions-about-c-syntax/7826875#7826875\n\n");
+
+    char letterGrade;
+    printf("Enter the letter grade: ");
+    scanf(" %c", &letterGrade);
+    printf("Your letter grade is: %c\n\n", letterGrade);
+
+    printf("For a 'string':\n");
+    printf("char name[20];\nprintf(\"Enter your name: \")\n");
+    printf("scanf(\"%%s\", name);\n");
+    printf("printf(\"Your name is: %s\", name)\n");
+    printf("*NOTE: 20 characters & that there is no ampersand\n\n");
+    printf("**ADDITONALLY: Only grabs the string up until the first space (so if you put 'John Smith' it'll only use 'John')\n\n");
+
+    char name[20];
+    printf("Enter your name: ");
+    scanf("%s", name);
+    printf("Your name is: %s", name);
+
+    printf("For a 'string' that includes spaces:\n");
+    printf("char name[20];\nprintf(\"Enter your name: \")\n");
+    printf("fgets(name, 20, stdin);\n");
+    printf("printf(\"Your name is: %%s\", name)\n");
+    printf("*NOTE: fgets is taking the variable (name), a number of characters (input validation), & a location of where to pull the string (stdin)");
+
+    char name1[20];
+    printf("Enter your name: ");
+    fgets(name1, 20, stdin);
+    printf("Your name is: %s", name1);
+    /*this one has input issues since a newline character is in the buffer. Ref URLs above*/
 
     return 0;
 
