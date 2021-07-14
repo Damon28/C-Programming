@@ -3,14 +3,11 @@
 
 int main()
 {
-    char characterName[] = "Tom";
-    int characterAge = 67;
+    int age = 40;
+    double gpa = 3.7;
+    char grade = 'A';
+    char phrase[] = 'Need those brackets to create a string (AKA an array).'
 
-    printf("There once was a man named %s\n", characterName);
-    printf("he was %d years old.\n", characterAge);
-    characterAge = 30;
-    printf("He really liked the name %s\n", characterName);
-    printf("but did not like being %d.\n", characterAge);
     return 0;
 
 }
