@@ -27,6 +27,18 @@ int main()
     printf("Printing a float uses %%f.\n");
     printf("EX: Ha, float %%f, 3.9546\n");
     printf("prints:\nHa, float %f\n\n", 3.9);
+
+    printf("printf(\"%%f\", 8.9)\nPRINTS: 8.900000\n");
+    printf("printf(\"%%f\", 5 + 4.5)\nPRINTS: 9.500000\n\n");
+
+    printf("printf(\"%%f\", 5 + 4) | wont't work because it's asking for a float\n\n");
+
+    printf("===BUILT IN FUNCTIONS===\n\n");
+    printf("printf(\"%f\", pow(2, 3)) | yields: 8.000000\n");
+    printf("printf(\"%f\", sqrt(36)) | yields: 6.000000\n");
+    printf("printf(\"%f\", ceil(36.376)) | This stands for 'ceiling' & yields: 37.000000\n");
+    printf("printf(\"%f\", floor(36.376)) | yields: 36.000000\n\n");
+
     return 0;
 
 }
