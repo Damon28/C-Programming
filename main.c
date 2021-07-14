@@ -2,6 +2,7 @@
 #include <stdlib.h>
 
 /*This is based on 'C Programming Tutorial for Beginners' by freeCodeCamp.org - https://www.youtube.com/watch?v=KJgsSFOSQv0 */
+
 int main()
 {
     char characterName[] = "John";
@@ -47,7 +48,15 @@ int main()
     /*this is
     an example*/
 
-    print("===Constants==")
+    printf("===Constants==\n\n");
+    printf("Constant - a variable in C that cannot be modified\n\n");
+    printf("CODE:\nint num = 5;\nprintf(\"%%d\\n\", num);\nnum = 8;\nprintf(\"%%d\", num);\n");
+    printf("OUTPUT:\n5\n8\n\n");
+
+    printf("To make 'num' a constant do the following:\n");
+    printf("const int num = 5;\n");
+    printf("This will make the above code throw an error since it tries to modify the constant.\n");
+    printf("*Constant variables are usually all caps (so 'NUM').\n\n");
 
 
     return 0;
