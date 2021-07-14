@@ -39,6 +39,14 @@ int main()
     printf("printf(\"%f\", ceil(36.376)) | This stands for 'ceiling' & yields: 37.000000\n");
     printf("printf(\"%f\", floor(36.376)) | yields: 36.000000\n\n");
 
+    printf("===Comments===\n\n");
+    printf("Comments use a forward slash (/) & an asterisk (*) to begin the comment like this: /*\n");
+    printf("To close off the comment it is another asterisk followed by a forward slash like this: */\n");
+    printf("Comments look like this: /*blah blah blah*/\n\n");
+    /*this is
+    an example*/
+
+
     return 0;
 
 }
