@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/*This is based on 'C Programming Tutorial for Beginners' by freeCodeCamp.org - https://www.youtube.com/watch?v=KJgsSFOSQv0 */
 int main()
 {
     char characterName[] = "John";
@@ -20,7 +21,7 @@ int main()
 
     printf("Almost exactly like print in Python\n");
     printf("Use '%%d' to print out numbers. For filling containers using variables treat it like Python's .format() method.\n\n");
-    printf("EX: printf\(\"My favorite %%s is %%d\", \"number\", 500\)\n");
+    printf("EX: printf(\"My favorite %%s is %%d\", \"number\", 500)\n");
     printf("Prints as: ");
     printf("My favorite %s is %d\n\n", "number", 500);
 
@@ -45,6 +46,8 @@ int main()
     printf("Comments look like this: /*blah blah blah*/\n\n");
     /*this is
     an example*/
+
+    print("===Constants==")
 
 
     return 0;
